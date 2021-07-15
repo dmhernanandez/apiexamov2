@@ -12,7 +12,7 @@ $mainContainer->set("db", function (){
     $user="movil2";
     $pass= "carwash2021";
     $host= "173.249.21.6";
-    $dbName="carwashcatrachodb";
+    $dbName="carwash";
     $charSet="utf8";
 
     $options=[PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,

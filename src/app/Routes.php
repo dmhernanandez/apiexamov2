@@ -7,7 +7,16 @@
  * Time: 14:03
  */
 
+use Slim\Routing\RouteCollectorProxy;
 
-require __DIR__."/carlos.php";
-require __DIR__."/dany.php";
+$app -> group("/exam",function (RouteCollectorProxy $group){
+    $group->get("/sites","Api\controllers\SitesController:getAllSites");
+    $group->get("/sites/{id}","Api\controllers\SitesController:getSiteById");
 
+    $group->post("/add","Api\controllers\SitesController:addSite");
+
+    $group->put("/update/{id}","Api\controllers\SitesController:updateSite");
+
+    $group->delete("/delete/{id}","Api\controllers\SitesController:deleteSite");
+
+});
