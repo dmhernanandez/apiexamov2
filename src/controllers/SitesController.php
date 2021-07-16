@@ -17,26 +17,24 @@ class SitesController extends BaseController
     public function  getSiteById(Request $request, Response $response,array $args)
     {
         $sql = "SELECT * FROM Sitios WHERE Id=".$args["id"];
-        $respuesta=[];
+        $respuesta=array();
         try {
             $db = $this->conteiner->get("db");
             $resultado = $db->query($sql);
 
             if ($resultado->rowCount() > 0)
             {
-                $respuesta=$resultado->fetchAll();
+             $respuesta=  self::format_array($resultado->fetchAll());
             }
             else
             {
               $respuesta=["msg" => "No existen registros con este Id"];
             }
         } catch (Exception $e) {
-            array_push($respuesta,["msg" => $e->getMessage()]);
-
+            $respuesta=["msg" => $e->getMessage()];
         }
-
+          $response->getBody()->write($respuesta);
          return $response->withHeader('Content-type', 'application/json')
-             ->withJson($respuesta)
              ->withStatus(201);
 
 
@@ -53,18 +51,20 @@ class SitesController extends BaseController
 
             if ($resultado->rowCount() > 0)
             {
-                $array= $resultado->fetchAll();
+                $response->getBody()->write(json_encode($resultado->fetchAll(),JSON_NUMERIC_CHECK));
             }
             else
             {
                 $array=["msg" =>"No hay registros en la base de datos"];
             }
         }
+
         catch(Exception $e)
         {
             $array=["error" => $e->getMessage()];
         }
-        return $response->withJson($array);
+        return $response->withHeader('Content-type', 'application/json')
+            ->withStatus(201);
 
 
     }

@@ -17,4 +17,13 @@ class BaseController
     {
         $this->conteiner=$container;
     }
+    //Sirve para dar formato a los arreglos y retornarlos en las apis
+    public static function format_array($array){
+        $respuesta=[];
+        foreach ($array as $valor){
+            array_push($respuesta,$valor);
+        }
+        return json_encode($respuesta,JSON_NUMERIC_CHECK);
+     }
+
 }
