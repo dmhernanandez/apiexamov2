@@ -46,23 +46,23 @@
       <file leaf-file-name="SitesController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../movil2api/src/controllers/SitesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-952">
-              <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+            <state relative-caret-position="-846">
+              <caret line="37" column="85" lean-forward="false" selection-start-line="37" selection-start-column="85" selection-end-line="37" selection-end-column="85" />
               <folding>
                 <element signature="e#124#175#0#PHP" expanded="true" />
-                <element signature="e#3164#4427#0#PHP" expanded="false" />
-                <element signature="e#4432#5291#0#PHP" expanded="false" />
-                <marker date="1626416438464" expanded="true" signature="387:417" ph="SELECT * FRO... Sitios" />
-                <marker date="1626416438464" expanded="true" signature="387:420" ph="SELECT * FRO... Sitios" />
-                <marker date="1626416438464" expanded="true" signature="1231:1251" ph="SELECT * FRO... Sitios" />
-                <marker date="1626416438464" expanded="true" signature="2194:2322" ph="INSERT INTO Sitios" />
-                <marker date="1626416438464" expanded="true" signature="2205:2213" ph="SELECT * FRO... Sitios" />
-                <marker date="1626416438464" expanded="true" signature="2205:2282" ph="Insert into Sitios" />
-                <marker date="1626416438464" expanded="true" signature="2205:2322" ph="Insert into Sitios" />
-                <marker date="1626416438464" expanded="true" signature="3322:3413" ph="UPDATE Sitio... " />
-                <marker date="1626416438464" expanded="true" signature="3322:3419" ph="UPDATE Sitio... " />
-                <marker date="1626416438464" expanded="true" signature="3322:3445" ph="UPDATE Sitio... " />
-                <marker date="1626416438464" expanded="true" signature="4534:4562" ph="DELETE FROM " />
+                <element signature="e#3206#4469#0#PHP" expanded="false" />
+                <element signature="e#4474#5333#0#PHP" expanded="false" />
+                <marker date="1626422710222" expanded="true" signature="387:417" ph="SELECT * FRO... Sitios" />
+                <marker date="1626422710222" expanded="true" signature="387:420" ph="SELECT * FRO... Sitios" />
+                <marker date="1626422710222" expanded="true" signature="1245:1265" ph="SELECT * FRO... Sitios" />
+                <marker date="1626422710222" expanded="true" signature="2222:2350" ph="INSERT INTO Sitios" />
+                <marker date="1626422710222" expanded="true" signature="2233:2241" ph="SELECT * FRO... Sitios" />
+                <marker date="1626422710222" expanded="true" signature="2233:2310" ph="Insert into Sitios" />
+                <marker date="1626422710222" expanded="true" signature="2233:2350" ph="Insert into Sitios" />
+                <marker date="1626422710222" expanded="true" signature="3364:3455" ph="UPDATE Sitio... " />
+                <marker date="1626422710222" expanded="true" signature="3364:3461" ph="UPDATE Sitio... " />
+                <marker date="1626422710222" expanded="true" signature="3364:3487" ph="UPDATE Sitio... " />
+                <marker date="1626422710222" expanded="true" signature="4576:4604" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -314,12 +314,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1626371634906</updated>
-      <workItem from="1626371637143" duration="34225000" />
+      <workItem from="1626371637143" duration="37142000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34225000" />
+    <option name="totallyTimeSpent" value="37142000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -332,6 +332,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -341,7 +342,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45335516" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45335516" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -454,23 +455,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../movil2api/src/controllers/SitesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-952">
-          <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        <state relative-caret-position="-846">
+          <caret line="37" column="85" lean-forward="false" selection-start-line="37" selection-start-column="85" selection-end-line="37" selection-end-column="85" />
           <folding>
             <element signature="e#124#175#0#PHP" expanded="true" />
-            <element signature="e#3164#4427#0#PHP" expanded="false" />
-            <element signature="e#4432#5291#0#PHP" expanded="false" />
-            <marker date="1626416438464" expanded="true" signature="387:417" ph="SELECT * FRO... Sitios" />
-            <marker date="1626416438464" expanded="true" signature="387:420" ph="SELECT * FRO... Sitios" />
-            <marker date="1626416438464" expanded="true" signature="1231:1251" ph="SELECT * FRO... Sitios" />
-            <marker date="1626416438464" expanded="true" signature="2194:2322" ph="INSERT INTO Sitios" />
-            <marker date="1626416438464" expanded="true" signature="2205:2213" ph="SELECT * FRO... Sitios" />
-            <marker date="1626416438464" expanded="true" signature="2205:2282" ph="Insert into Sitios" />
-            <marker date="1626416438464" expanded="true" signature="2205:2322" ph="Insert into Sitios" />
-            <marker date="1626416438464" expanded="true" signature="3322:3413" ph="UPDATE Sitio... " />
-            <marker date="1626416438464" expanded="true" signature="3322:3419" ph="UPDATE Sitio... " />
-            <marker date="1626416438464" expanded="true" signature="3322:3445" ph="UPDATE Sitio... " />
-            <marker date="1626416438464" expanded="true" signature="4534:4562" ph="DELETE FROM " />
+            <element signature="e#3206#4469#0#PHP" expanded="false" />
+            <element signature="e#4474#5333#0#PHP" expanded="false" />
+            <marker date="1626422710222" expanded="true" signature="387:417" ph="SELECT * FRO... Sitios" />
+            <marker date="1626422710222" expanded="true" signature="387:420" ph="SELECT * FRO... Sitios" />
+            <marker date="1626422710222" expanded="true" signature="1245:1265" ph="SELECT * FRO... Sitios" />
+            <marker date="1626422710222" expanded="true" signature="2222:2350" ph="INSERT INTO Sitios" />
+            <marker date="1626422710222" expanded="true" signature="2233:2241" ph="SELECT * FRO... Sitios" />
+            <marker date="1626422710222" expanded="true" signature="2233:2310" ph="Insert into Sitios" />
+            <marker date="1626422710222" expanded="true" signature="2233:2350" ph="Insert into Sitios" />
+            <marker date="1626422710222" expanded="true" signature="3364:3455" ph="UPDATE Sitio... " />
+            <marker date="1626422710222" expanded="true" signature="3364:3461" ph="UPDATE Sitio... " />
+            <marker date="1626422710222" expanded="true" signature="3364:3487" ph="UPDATE Sitio... " />
+            <marker date="1626422710222" expanded="true" signature="4576:4604" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>

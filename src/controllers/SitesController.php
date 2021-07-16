@@ -35,7 +35,7 @@ class SitesController extends BaseController
 
             $response->getBody()->write(json_encode(["msg" => $e->getMessage()]));
         }
-         return $response->withHeader('Content-type', 'application/json')
+         return $response->withHeader('Content-type', 'application/json;charset=utf-8')
              ->withStatus(201);
 
 
@@ -65,7 +65,7 @@ class SitesController extends BaseController
             $response->getBody()->write(json_encode(["error" => $e->getMessage()]));
 
         }
-        return $response->withHeader('Content-type', 'application/json')
+        return $response->withHeader('Content-type', 'application/json;charset=utf-8')
             ->withStatus(201);
 
 
@@ -98,7 +98,7 @@ class SitesController extends BaseController
         {
             $respuesta=["status" =>"error", "msg"=>$e->getMessage()];
         }
-        return $response->withHeader('Content-type', 'application/json')
+        return $response->withHeader('Content-type', 'application/json;charset=utf-8')
             ->withJson($respuesta)
                         ->withStatus(201);
 
