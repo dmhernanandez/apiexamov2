@@ -10,14 +10,14 @@
 use Slim\Routing\RouteCollectorProxy;
 use Api\controllers\SitesController;
 $app -> group("/exam",function (RouteCollectorProxy $group){
-    $group->get("/sites",SitesController::class.":getAllSites");
+    $group->get("/sites",SitesController::class.':getAllSites');
     
-    $group->get("/sites/{id}" ,SitesController::class.":getSiteById");
+    $group->get("/sites/{id}" ,SitesController::class.':getSiteById');
 
-    $group->post("/add",SitesController::class.":addSite");
+    $group->post("/add",SitesController::class.':addSite');
 
-    $group->put("/update/{id}",SitesController::class.":updateSite");
+    $group->put("/update/{id}",SitesController::class.':updateSite');
 
-    $group->delete("/delete/{id}",SitesController::class.":deleteSite");
+    $group->delete("/delete/{id}",SitesController::class.':deleteSite');
 
 });
