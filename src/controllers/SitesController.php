@@ -24,16 +24,17 @@ class SitesController extends BaseController
 
             if ($resultado->rowCount() > 0)
             {
-             $respuesta=  self::format_array($resultado->fetchAll());
+                $response->getBody()->write(json_encode($resultado->fetchAll(),JSON_NUMERIC_CHECK));
             }
             else
             {
-              $respuesta=["msg" => "No existen registros con este Id"];
+                $response->getBody()->write(json_encode(["msg" => "No existen registros con este Id"]));
+
             }
         } catch (Exception $e) {
-            $respuesta=["msg" => $e->getMessage()];
+
+            $response->getBody()->write(json_encode(["msg" => $e->getMessage()]));
         }
-          $response->getBody()->write($respuesta);
          return $response->withHeader('Content-type', 'application/json')
              ->withStatus(201);
 
@@ -55,13 +56,14 @@ class SitesController extends BaseController
             }
             else
             {
-                $array=["msg" =>"No hay registros en la base de datos"];
+                $response->getBody()->write(json_encode(["msg" =>"No hay registros en la base de datos"]));
             }
         }
 
         catch(Exception $e)
         {
-            $array=["error" => $e->getMessage()];
+            $response->getBody()->write(json_encode(["error" => $e->getMessage()]));
+
         }
         return $response->withHeader('Content-type', 'application/json')
             ->withStatus(201);
