@@ -21,8 +21,7 @@ class ConvertImages
 
 // base64 encoded utf-8 string
             $binary = base64_decode($imagen);
-// binary, utf-8 bytes
-
+// binary, utf-8 by
             header("Content-Type: bitmap; charset=utf-8");
 
             $file = fopen( $this->ruta_base. $image_name, "wb");
