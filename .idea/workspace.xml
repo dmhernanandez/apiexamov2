@@ -4,8 +4,6 @@
     <list default="true" id="bba6ead3-b126-4f2e-94f7-6cea0fa22922" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/SitesController.php" afterPath="$PROJECT_DIR$/src/controllers/SitesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/ConvertImages.php" afterPath="$PROJECT_DIR$/src/utils/ConvertImages.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,20 +61,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
-              <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SitesController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SitesController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/SitesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
+            <state relative-caret-position="695">
               <caret line="98" column="42" lean-forward="false" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="42" />
               <folding>
                 <element signature="e#124#152#0#PHP" expanded="true" />
@@ -149,8 +147,8 @@
         <option value="$PROJECT_DIR$/src/app/Routes.php" />
         <option value="$PROJECT_DIR$/src/app/Routes.php" />
         <option value="$PROJECT_DIR$/src/utils/ConvertImages.php" />
-        <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/src/controllers/SitesController.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
       </list>
     </option>
   </component>
@@ -390,12 +388,12 @@
       <workItem from="1626371637143" duration="38119000" />
       <workItem from="1626431207301" duration="1942000" />
       <workItem from="1626483767288" duration="1268000" />
-      <workItem from="1626485408047" duration="18151000" />
+      <workItem from="1626485408047" duration="18405000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59480000" />
+    <option name="totallyTimeSpent" value="59734000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -771,17 +769,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/SitesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
+        <state relative-caret-position="695">
           <caret line="98" column="42" lean-forward="false" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="42" />
           <folding>
             <element signature="e#124#152#0#PHP" expanded="true" />
@@ -798,6 +788,14 @@
             <marker date="1626533219550" expanded="true" signature="4063:4183" ph="UPDATE Sitio... " />
             <marker date="1626533219550" expanded="true" signature="5272:5300" ph="DELETE FROM " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
