@@ -9,9 +9,12 @@
 
 use Slim\Routing\RouteCollectorProxy;
 use Api\controllers\SitesController;
-$app -> group("/exam",function (RouteCollectorProxy $group){
+$app -> group("/exam",function (RouteCollectorProxy $group)
+{
     $group->get("/sites",SitesController::class.':getAllSites');
-    
+
+    $group->get("/sites/img/{photo_name}",SitesController::class.':getImage');
+
     $group->get("/sites/{id}" ,SitesController::class.':getSiteById');
 
     $group->post("/add",SitesController::class.':addSite');

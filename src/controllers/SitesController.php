@@ -7,8 +7,10 @@
  */
 
 namespace Api\controllers;
+use Api\utils\ConvertImages;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
+use Slim\Psr7\Stream;
 
 
 class SitesController extends BaseController
@@ -40,6 +42,22 @@ class SitesController extends BaseController
 
 
     }
+    public function  getImage(Request $request, Response $response,array $args)
+    {
+        $file ="C:/Apache24/htdocs/movil2api/src/img/default.jpg";
+        // a 100mb file
+
+        $fh = fopen($file, 'r');
+
+        return $response->withBody($fh)
+            ->withHeader('Content-Disposition', 'attachment; filename=document.jpg;')
+            ->withHeader('Content-Type', mime_content_type($file))
+            ->withHeader('Content-Length', filesize($file));
+
+
+}
+
+
 
     public function  getAllSites(Request $request, Response $response, $args)
     {
@@ -76,9 +94,12 @@ class SitesController extends BaseController
 
 
         $valor = json_decode($request->getBody(),true); //Convertimos el arrya de objetos y lo convertimos en una array asociativo
+        $convert = new ConvertImages();
+        $imgRoute= $convert->convertImage($valor["foto"]);//obtenemos el ruta de la imagen
+        $imgRoute= $this->url.$imgRoute;
 
-        $sql = "INSERT INTO  Sitios(Descripcion,Latitud, Longitud,Fotografia) 
-                VALUES (:descripcion, :latitud, :longitud, :foto)";
+        $sql = "INSERT INTO  Sitios(Descripcion,Latitud, Longitud,UrlFoto) 
+                VALUES (:descripcion, :latitud, :longitud, :urlFoto)";
          $respuesta=[];
          try
         {
@@ -87,7 +108,7 @@ class SitesController extends BaseController
             $stament->bindParam(":descripcion",$valor["descripcion"]);
             $stament->bindParam(":latitud",$valor["latitud"]);
             $stament->bindParam(":longitud",$valor["longitud"]);
-            $stament->bindParam(":foto",$valor["foto"]);
+            $stament->bindParam(":urlFoto",$imgRoute);
             $res = $stament->execute();
 
             if($res){
@@ -110,7 +131,7 @@ class SitesController extends BaseController
     {
         $valor = json_decode($request->getBody(),true);
 
-        $sql = "UPDATE Sitios  SET Descripcion=:descripcion,Latitud=:latitud, Longitud=:longitud,Fotografia=:foto
+        $sql = "UPDATE Sitios  SET Descripcion=:descripcion,Latitud=:latitud, Longitud=:longitud,UrlFoto=:foto
                 WHERE Id=".$arg["id"];
          $respuesta=[];
         try

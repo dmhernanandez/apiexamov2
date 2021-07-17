@@ -13,9 +13,11 @@ use Psr\Container\ContainerInterface;
 class BaseController
 {
     protected $conteiner;
+    protected $url;
     public function  __construct(ContainerInterface $container)
     {
         $this->conteiner=$container;
+        $this->url="http://173.249.21.6/exam/sites/img/";
     }
     //Sirve para dar formato a los arreglos y retornarlos en las apis
     public static function format_array($array){
