@@ -15,7 +15,8 @@ use Slim\Psr7\Stream;
 
 class SitesController extends BaseController
 {
-
+ 
+    
     public function  getSiteById(Request $request, Response $response,array $args)
     {
         $sql = "SELECT * FROM Sitios WHERE Id=".$args["id"];
@@ -44,16 +45,18 @@ class SitesController extends BaseController
     }
     public function  getImage(Request $request, Response $response,array $args)
     {
-        $file ="C:/Apache24/htdocs/movil2api/src/img/default.jpg";
-        // a 100mb file
+        $file= __DIR__."/../src/img/".$args["photo_name"];
+        // // a 100mb file
 
-        $fh = fopen($file, 'r');
+        if (file_exists($file)) {
+            return $response->withHeader("Location","/sr/img/".$args["photo_name"])
+            ->withStatus(302);
 
-        return $response->withBody($fh)
-            ->withHeader('Content-Disposition', 'attachment; filename=document.jpg;')
-            ->withHeader('Content-Type', mime_content_type($file))
-            ->withHeader('Content-Length', filesize($file));
-
+        }
+        else
+        return $response->withHeader("Location","/src/img/default.jpg")
+            ->withStatus(302);
+        
 
 }
 
