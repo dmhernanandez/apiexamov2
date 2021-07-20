@@ -98,7 +98,7 @@ class SitesController extends BaseController
 
         $valor = json_decode($request->getBody(),true); //Convertimos el arrya de objetos y lo convertimos en una array asociativo
         $convert = new ConvertImages();
-       // $imgRoute= $convert->convertImage($valor["foto"]);//obtenemos el ruta de la imagen
+        $imgRoute= $convert->convertImage($valor["foto"]);//obtenemos el ruta de la imagen
         $imgRoute= $this->url."default.jpg";
 
         $sql = "INSERT INTO  Sitios(Descripcion,Latitud, Longitud,UrlFoto) 

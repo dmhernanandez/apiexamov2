@@ -17,7 +17,7 @@ class BaseController
     public function  __construct(ContainerInterface $container)
     {
         $this->conteiner=$container;
-        $this->url="http://173.249.21.6/exam/sites/img/";
+        $this->url="http://173.249.21.6/exam/img/";
     }
     //Sirve para dar formato a los arreglos y retornarlos en las apis
     public static function format_array($array){
