@@ -45,19 +45,21 @@ class SitesController extends BaseController
     }
     public function  getImage(Request $request, Response $response,array $args)
     {
-        $file= $_SERVER["DOCUMENT_ROOT"]."/src/img/".$args["photo_name"];
-        // // a 100mb file
-
-        if (file_exists($file)) {
-            return $response->withHeader("Location","/sr/img/".$args["photo_name"])
-            ->withStatus(302);
-
-        }
-        else
-        return $response->withHeader("Location","/src/img/default.jpg")
-            ->withStatus(302);
+       $file= $_SERVER["DOCUMENT_ROOT"]."/src/img/".$args["photo_name"];
+        // a 100mb file
         
+        // if (file_exists($file)) {
+        //     return $response->withHeader("Location","/sr/img/".$args["photo_name"])
+        //     ->withStatus(302);
 
+        // }
+        // else
+        // return $response->withHeader("Location","/src/img/default.jpg")
+        //     ->withStatus(302);
+
+        return $response->getBody()->write($file);
+            
+        
 }
 
 
