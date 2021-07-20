@@ -54,10 +54,10 @@ class SitesController extends BaseController
 
         // }
         // else
-        // return $response->withHeader("Location","/src/img/default.jpg")
-        //     ->withStatus(302);
+        return $response->withHeader("Location","/src/img/".$args["photo_name"])
+            ->withStatus(302);
 
-        return $response->getBody()->write($file);
+      
             
         
 }
