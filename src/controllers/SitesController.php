@@ -15,7 +15,7 @@ use Slim\Psr7\Stream;
 
 class SitesController extends BaseController
 {
- 
+ //Hoa
     
     public function  getSiteById(Request $request, Response $response,array $args)
     {
@@ -98,8 +98,8 @@ class SitesController extends BaseController
 
         $valor = json_decode($request->getBody(),true); //Convertimos el arrya de objetos y lo convertimos en una array asociativo
         $convert = new ConvertImages();
-        $imgRoute= $convert->convertImage($valor["foto"]);//obtenemos el ruta de la imagen
-
+        $imgRoute=$this->url.$convert->convertImage($valor["foto"]);//obtenemos el ruta de la imagen
+        
         $sql = "INSERT INTO  Sitios(Descripcion,Latitud, Longitud,UrlFoto) 
                 VALUES (:descripcion, :latitud, :longitud, :urlFoto)";
          $respuesta=[];
