@@ -45,7 +45,7 @@ class SitesController extends BaseController
     }
     public function  getImage(Request $request, Response $response,array $args)
     {
-       $file= $_SERVER["DOCUMENT_ROOT"]."/src/img/".$args["photo_name"];
+       $file= __DIR__."/../src/img/".$args["photo_name"];
         // a 100mb file
         
         // if (file_exists($file)) {
@@ -83,7 +83,7 @@ class SitesController extends BaseController
             }
         }
 
-        catch(Exception $e)
+        catch(\Exception $e)
         {
             $response->getBody()->write(json_encode(["error" => $e->getMessage()]));
 
